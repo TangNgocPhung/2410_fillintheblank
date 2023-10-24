@@ -14,8 +14,6 @@ class scene extends Phaser.Scene{
 
     create()
     {
-
-       
         this.questions =
         [
             { 
