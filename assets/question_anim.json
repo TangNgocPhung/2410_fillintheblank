@@ -1,0 +1,40 @@
+{
+    "anims": [
+        {
+            "key": "question_anims",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "question",
+                    "frame": "1"
+                },
+                {
+                    "key": "question",
+                    "frame": "2"
+                },
+                {
+                    "key": "question",
+                    "frame": "3"
+                },
+                {
+                    "key": "question",
+                    "frame": "4"
+                },
+                {
+                    "key": "question",
+                    "frame": "5"
+                },
+                {
+                    "key": "question",
+                    "frame": "6"
+                },
+                {
+                    "key": "question",
+                    "frame": "7"
+                }
+            ]
+        }
+    ]
+}

@@ -1,21 +1,397 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            #input-form {
-                padding: 15px;
-                background-color: #931C22;
+<html lang="vn">
+<meta charset="UTF-8">
+<head>
+    <title>Giải mã ô chữ</title>
+    <style>
+        /* table
+        {
+            text-align: center;
+            padding:10px;
+            border:1px dashed #888;
+        } */
+
+        /*body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: content-box;
+        }
+        */
+
+        td
+        {
+            width: 5px;
+            height: 5px;
+        }
+        
+        .dark {
+            background: #732626;
+        }
+
+        .inpt {
+            width: 30px;
+            height: 30px;
+            font-size:20px;
+            text-align:center;
+            border: 2px solid #222;
+        }
+        .typping{
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr class = "row_cross row_cross1">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> <img src="assets/number/1.png" width="25" height="25"  alt=""> </td>
+        <td class = "typping" ><input name = "11" style="background-color: #ffff4d; color: red;"  class="inpt" type="text" maxlength="1" placeholder=""/></td>
+        <td class = "typping" ><input name = "12" class="inpt" type="text" maxlength="1" placeholder=""/></td>
+        <td class = "typping"><input name = "13" class="inpt" type="text" maxlength="1" placeholder=""/></td>
+        <td class = "typping"><input name = "14" class="inpt" type="text" maxlength="1" placeholder=""/></td>
+        <td class = "typping"><input name = "15" class="inpt" type="text" maxlength="1" placeholder=""></td>
+        <td class = "typping"><input name = "16" class="inpt" type="text" maxlength="1" placeholder=""></td>
+    </tr>
+
+    <tr class = "row_cross row_cross2">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> <img src="assets/number/2.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"><input name = "21" class="inpt" type="text" maxlength="1" placeholder="" /></td>
+        <td class = "typping"><input name = "22" class="inpt" type="text" maxlength="1" placeholder="" /></td>
+        <td class = "typping"><input name = "23" class="inpt" type="text" maxlength="1" placeholder="" /></td>
+        <td class = "typping"><input name = "24" class="inpt" type="text" maxlength="1" placeholder="" /></td>
+        <td class = "typping"><input name = "25" class="inpt" type="text" maxlength="1" placeholder="" /></td>
+        <td class = "typping"><input name = "26" style="background-color: #ffff4d; color: red;"   class="inpt" type="text" maxlength="1" placeholder="" /></td>
+        <td class = "typping"><input name = "27" class="inpt" type="text" maxlength="1" placeholder="" /></td>
+        <td class = "typping"><input name = "28" class="inpt" type="text" maxlength="1" placeholder="" /></td>
+    </tr>
+    <tr class = "row_cross row_cross3">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> <img src="assets/number/3.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"><input name = "31"  class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "32" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "33" style="background-color: #ffff4d; color: red;"  class="inpt" type="text" placeholder="" maxlength="1" /></td>
+        <td class = "typping"><input name = "34" class="inpt" type="text" placeholder="" maxlength="1" /></td>
+        <td class = "typping"><input name = "35" class="inpt" type="text" placeholder="" maxlength="1" /></td>
+    </tr>
+
+    <tr class = "row_cross row_cross4">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> <img src="assets/number/4.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"><input name = "41"  class="inpt" type="text" placeholder="" maxlength="1" /></td>
+        <td class = "typping"><input name = "42" class="inpt" type="text" placeholder=""  maxlength="1"  /></td>
+        <td class = "typping"><input name = "43" class="inpt" type="text" placeholder=""  maxlength="1"  /></td>
+        <td class = "typping"><input name = "44" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "45" style="background-color: #ffff4d; color: red;"   class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "46" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+    </tr>
+
+    <tr class = "row_cross row_cross5">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="assets/number/5.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"><input name = "51" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "52" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "53" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "54" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "55" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "56" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "57" class="inpt" style="background-color: #ffff4d; color: red;"  type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "58" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "59" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "510" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "511" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "512" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "513" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+    </tr>
+
+    <tr class = "row_cross row_cross6">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> <img src="assets/number/6.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"><input name = "61" class="inpt" style="background-color: #ffff4d; color: red;"  type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "62" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "63" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "64" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "65" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "66" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "67" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input name = "68" class="inpt" type="text" placeholder=""  maxlength="1" /></td>
+    </tr>
+
+    <tr class = "row_cross row_cross7">
+        <td> <img src="assets/number/7.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"><input class="inpt" name = "71" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "72" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "73" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "74" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "75" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "76" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "77" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "78" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "79" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "710" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "711" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "712" style="background-color: #ffff4d; color: red;"  type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "713" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "714" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"><input class="inpt" name = "715" type="text" placeholder=""  maxlength="1" /></td>
+    </tr>
+
+    <tr class = "row_cross row_cross8">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> <img src="assets/number/8.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"> <input class="inpt" name = "81" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name ="82"  type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "83" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "84"  style="background-color: #ffff4d; color: red;" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"> <input class="inpt" name = "85" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "86" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "87" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "88" type="text" placeholder=""  maxlength="1" /> </td>
+    </tr>
+
+    <tr class = "row_cross row_cross9">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> <img src="assets/number/9.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"> <input class="inpt" name = "91" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name ="92"  type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "93" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "94" type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"> <input class="inpt" name = "95" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "96" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "97" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "98"  style="background-color: #ffff4d; color: red;" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "99" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "910" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "911" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "912" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "913" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "914" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "915" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "916" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "917" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "918" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "919" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "920" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "921" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "922" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "923" type="text" placeholder=""  maxlength="1" /> </td>
+    </tr>
+
+    <tr class = "row_cross row_cross10">
+        <td><img src="assets/number/10.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"> <input class="inpt" name = "101" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name ="102"  type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "103" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "104"  type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"> <input class="inpt" name = "105" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "106" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "107" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "108" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "109" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1010" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1011" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1012" style="background-color: #ffff4d; color: red;"  type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1013" type="text" placeholder=""  maxlength="1" /> </td>
+    </tr>
+
+    <tr class = "row_cross row_cross11">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="assets/number/11.png" width="25" height="25"  alt=""></td>
+        <td class = "typping"> <input class="inpt" name = "111" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name ="112"  type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "113" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "114"  type="text" placeholder=""  maxlength="1" /></td>
+        <td class = "typping"> <input class="inpt" name = "115" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "116" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "117" style="background-color: #ffff4d; color: red;"   type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "118" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "119" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1110" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1111" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1112" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1113" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1114" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1115" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1116" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1117" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1118" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1119" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1120" type="text" placeholder=""  maxlength="1" /> </td>
+        <td class = "typping"> <input class="inpt" name = "1121" type="text" placeholder=""  maxlength="1" /> </td>
+    </tr>
+
+<tr class = "row_cross row_cross12">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td> <img src="assets/number/12.png" width="25" height="25"  alt=""></td>
+    <td class = "typping"> <input class="inpt" name = "121" type="text" placeholder=""  maxlength="1" /> </td>
+    <td class = "typping"> <input class="inpt" name ="122"  type="text" placeholder=""  maxlength="1" /> </td>
+    <td class = "typping"> <input class="inpt" name = "123" type="text" placeholder=""  maxlength="1" /> </td>
+    <td class = "typping"> <input class="inpt" name = "124" style="background-color: #ffff4d; color: red;"   type="text" placeholder=""  maxlength="1" /></td>
+    <td class = "typping"> <input class="inpt" name = "125" type="text" placeholder=""  maxlength="1" /> </td>
+    <td class = "typping"> <input class="inpt" name = "126" type="text" placeholder=""  maxlength="1" /> </td>
+</tr>
+
+<tr class = "row_cross row_cross13">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td> <img src="assets/number/13.png" width="25" height="25"  alt=""></td>
+    <td id = "11" class = "typping"> <input class="inpt" name = "131" type="text" placeholder=""  maxlength="1" /> </td>
+    <td  id =  "12" class = "typping"> <input class="inpt" name ="132"  type="text" placeholder=""  maxlength="1" /> </td>
+    <td id = "13" class = "typping"> <input class="inpt" name = "133" type="text" placeholder=""  maxlength="1" /> </td>
+    <td id = "14" class = "typping"> <input class="inpt" name = "134" type="text" placeholder=""  maxlength="1" /></td>
+    <td id = "15" class = "typping"> <input class="inpt" name = "135" style="background-color: #ffff4d; color: red;"  type="text" placeholder=""  maxlength="1" /> </td>
+    <td class = "typping"> <input class="inpt" name = "136" type="text" placeholder=""  maxlength="1" /> </td>
+    <td class = "typping"> <input class="inpt" name = "137" type="text" placeholder=""  maxlength="1" /> </td>
+    <td class = "typping"><input class="inpt" name = "138" type="text" placeholder=""  maxlength="1" /> </td>
+</tr>
+
+</table>
+
+<script>
+    const row_crosses = document.querySelectorAll('.row_cross');
+    row_crosses.forEach(row => {
+        const inputs = row.querySelectorAll('.inpt');
+        const numberOfTds = row.querySelectorAll('.typping').length;
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', function() {
+                this.value[0] = this.value[0].toLowerCase();
+                if (this.value.length > 1) {
+                    this.value = this.value[0]; // Chỉ giữ lại ký tự đầu tiên
+                }
+                if (index < numberOfTds - 1 && this.value.length === 1) {
+                    const nextInput = inputs[index + 1];
+                    nextInput.focus(); // Di chuyển trỏ đến ô input kế tiếp
+                }
+            });
+        });
+    });
+</script>
+
+
+
+<!-- <script>
+    const row_crosses = document.querySelectorAll('.row_cross');
+row_crosses.forEach(row => {
+    const inputs = row.querySelectorAll('.inpt');
+    const numberOfTds = row.querySelectorAll('.typping').length;
+    const vietnameseAlphabet = 
+    ['ă', 'ặ', 'ẳ', 'ằ', 'ắ','â', 'ả','ạ', 'á', 'à' , 
+    'ấ', 'ầ', 'ẩ', 'ậ', 'đ',  'ề', 'ế', 'ệ', 'ể', 'ê',
+    'ì', 'í', 'ỉ' ,'ị', 'ọ', 'ỏ', 'ò', 'ó', 'ơ', 'ờ', 
+    'ớ','ợ', 'ở', 'ô', 'ộ', 'ổ', 'ồ', 'ố', 'ụ', 'ù', 
+    'ủ', 'ú', 'ự',  'ừ', 'ứ', 'ử', 'm', 'n', 'l',
+    'k', 's', 't', 'v', 'x', 'y', 'c', 'h', 'b', 'p', 'q', 'r'];
+
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', function() {
+            this.value[0] = this.value[0].toLowerCase();
+            const firstCharacter = this.value[0];
+            if (this.value.length > 0 && vietnameseAlphabet.includes(firstCharacter)) {
+                const nextInput = inputs[index + 1];
+                    if (nextInput) {
+                        nextInput.focus(); // Di chuyển trỏ đến ô input kế tiếp nếu là chữ cái tiếng Việt
+                    } 
             }
-            #input-form input {
-                padding: 10px;
-                font-size: 20px;
-                width: 400px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="input-form">
-            <input type="text" name="name" placeholder="Full Name" />
-        </div>
-    </body>
+            // o , i, u
+        });
+    });
+});
+</script> -->
+
+
+<script>
+var inputs = document.querySelectorAll("input.inpt");
+
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener("input", function() {
+    var allValues = "";
+    for (var j = 11; j <= 15; j++) {
+      allValues += document.getElementById("" + j).getElementsByTagName("input")[0].value;
+    }
+    if (allValues === "GEESE") {
+      for (var k = 11; k <= 15; k++) {
+        document.getElementById("" + k).getElementsByTagName("input")[0].style.color = "green";
+      }
+    } else {
+      for (var k = 11; k <= 15; k++) {
+        document.getElementById("" + k).getElementsByTagName("input")[0].style.color = "red";
+      }
+    }
+  });
+}
+</script>
+
+</body>
 </html>

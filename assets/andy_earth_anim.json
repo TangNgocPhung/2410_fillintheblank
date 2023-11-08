@@ -1,0 +1,48 @@
+{
+    "anims": [
+        {
+            "key": "andyearth_anims",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "andy_earth",
+                    "frame": "1"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "2"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "3"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "4"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "5"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "6"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "7"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "8"
+                },
+                {
+                    "key": "andy_earth",
+                    "frame": "9"
+                }
+            ]
+        }
+    ]
+}

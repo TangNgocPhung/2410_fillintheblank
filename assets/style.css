@@ -1,0 +1,34 @@
+/* table
+{
+    text-align: center;
+    padding:10px;
+    border:1px dashed #888;
+} */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+td
+{
+    width: 30px;
+    height: 30px;
+}
+
+.dark {
+    background:#333;
+}
+
+.inpt {
+    width: 50px;
+    height: 50px;
+    font-size:24px;
+    text-align:center;
+    border: 2px solid #222;
+}
+
+
+/media/gamesre/Intro_Homepage/assets/number/1.png
